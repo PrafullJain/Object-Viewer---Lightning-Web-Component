@@ -1,0 +1,32 @@
+<template>
+	<lightning-card title="Object Viewer - Lightning Web Component" icon-name="standard:sobject_collection">
+			<center>
+				<div class="slds-p-around_medium">
+					<lightning-radio-group name="radioGroup" options={options} value={value} type="button"
+						onchange={handleRadioChange}>
+					</lightning-radio-group>
+				</div>
+			</center>
+			<template if:true={spinnerShow}>
+				<lightning-spinner alternative-text="Loading..." variant="brand">
+				</lightning-spinner>
+			</template>
+			<div class="tableCSS">
+				<lightning-datatable class="datatableCSS slds-table–header-fixed_container slds-table slds-table_bordered slds-table_cell-buffer slds-table--header-fixed slds-table slds-table_cell-buffer
+					 slds-table_bordered slds-table_striped slds-table_col-bordered"
+					aria-labelledby="element-with-table-label other-element-with-table-label"
+					if:true={isStandardSelected} min-column-width="100" max-column-width="200000"
+					enable-infinite-loading show-row-number-column="true" hide-checkbox-column="true"
+					resize-column-disabled="true" data={standObjLs} columns={columns} key-field="Id">
+				</lightning-datatable>
+			</div>
+			<div class="tableCSS">
+				<lightning-datatable
+					class="datatableCSS slds-table–header-fixed_container slds-table slds-table_bordered  slds-table_cell-buffer slds-table--header-fixed slds-table slds-table_cell-buffer slds-table_bordered slds-table_striped slds-table_col-bordered"
+					enable-infinite-loading if:false={isStandardSelected} min-column-width="100"
+					max-column-width="200000" show-row-number-column="true" hide-checkbox-column="true"
+					resize-column-disabled="true" data={custObjLs} columns={columns} key-field="Id">
+				</lightning-datatable>
+			</div>
+	</lightning-card>
+</template>

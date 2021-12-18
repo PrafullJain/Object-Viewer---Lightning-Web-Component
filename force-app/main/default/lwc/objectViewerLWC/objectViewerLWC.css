@@ -1,0 +1,7 @@
+.tableCSS {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 293px;
+    margin: 2rem;
+    box-shadow: rgb(0 0 0 / 15%) 10px 10px 10px
+}
