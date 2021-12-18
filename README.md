@@ -22,7 +22,11 @@ The `sfdx-project.json` file contains useful configuration information for your 
 <h1><ul>Object Viewer - Lightning Web Component</ul></h1>
 <p>
   <ol><li>This LWC is used to see all the Standard,Custom Object as well as Custom Metadata with all of their Record Types & Child Relationships.</li>
-    <li>
-As we know we can use Schema Builder, But this LWC is useful to show all the Object through Single screen without navigating to another screen.</li>
-    </ol>
+    <li>As we know we can use Schema Builder, But this LWC is useful to show all the Object through Single screen without navigating to another screen.</li>
+  </ol>
+  <br/>
+  <img src="Object Viewer - Lightning Web Component 2.png" width="800" height="550">
+  <br/>
+  <img src="Object Viewer - Lightning Web Component.png" width="800" height="550">
+
   
